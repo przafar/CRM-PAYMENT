@@ -1,0 +1,90 @@
+{
+  "employees": [
+    {
+      "firstName": "Руслан",
+      "lastName": "Шомуродов",
+      "birthDate": "1985-06-15",
+      "passport": "AB1234567",
+      "gender": "Мужской",
+      "active": true,
+      "id": "1"
+    },
+    {
+      "firstName": "Сабина",
+      "lastName": "Орипова",
+      "birthDate": "1990-11-30",
+      "passport": "AA7654321",
+      "gender": "Женский",
+      "active": false,
+      "id": "2"
+    },
+    {
+      "id": "1347",
+      "firstName": "Равшан",
+      "lastName": "Баходиров",
+      "birthDate": "2000-07-11T19:00:00.000Z",
+      "passport": "AA2313213",
+      "gender": "Мужской",
+      "active": true
+    },
+    {
+      "id": "b728",
+      "firstName": "Икром",
+      "lastName": "Миркомилов",
+      "birthDate": "2004-07-14T19:00:00.000Z",
+      "passport": "AB346735",
+      "gender": "Мужской",
+      "active": true
+    },
+    {
+      "firstName": "Фаррух",
+      "lastName": "Алимов",
+      "birthDate": "2025-06-30T19:00:00.000Z",
+      "passport": "AB543545",
+      "gender": "Мужской",
+      "active": true,
+      "id": "77c0"
+    }
+  ],
+  "documents": [
+    {
+      "id": "1",
+      "type": "счет-фактура",
+      "number": "SF-001",
+      "date": "2025-07-01",
+      "description": "test 111",
+      "invoiceType": "Стандартная",
+      "trusteeFullName": "Илхомов Акбар Собир угли",
+      "employeeId": "77c0"
+    },
+    {
+      "id": "2",
+      "type": "доверенность",
+      "number": "DV-123",
+      "date": "2025-07-05",
+      "description": "test 222",
+      "invoiceType": "Стандартная",
+      "trusteeFullName": "Собирова Лола Алишер кизи",
+      "employeeId": "1"
+    },
+    {
+      "id": "4c4c",
+      "type": "счет-фактура",
+      "number": "TR3424324",
+      "date": "2025-07-01T19:00:00.000Z",
+      "description": "test",
+      "invoiceType": "Стандартная",
+      "employeeId": "2"
+    },
+    {
+      "type": "доверенность",
+      "number": "AT453453",
+      "date": "2025-07-10T19:00:00.000Z",
+      "description": "TEST",
+      "invoiceType": "Стандартная",
+      "trusteeFullName": "Илхомов Акбар Собир угли",
+      "employeeId": "1347",
+      "id": "f065"
+    }
+  ]
+}

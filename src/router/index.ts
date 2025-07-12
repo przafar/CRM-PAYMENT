@@ -1,26 +1,21 @@
-import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
-import HomeView from "../views/HomeView.vue";
+import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 
-const routes: Array<RouteRecordRaw> = [
+const routes: RouteRecordRaw[] = [
   {
-    path: "/",
-    name: "home",
-    component: HomeView,
+    path: '/employee',
+    name: 'employee',
+    component: () => import('@/pages/employee/Index.vue'),
   },
-  {
-    path: "/about",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+   {
+    path: '/documents',
+    name: 'documents',
+    component: () => import('@/pages/documents/Index.vue'),
   },
-];
+]
 
 const router = createRouter({
-  history: createWebHashHistory(),
+    history: createWebHashHistory(),
   routes,
-});
+})
 
-export default router;
+export default router

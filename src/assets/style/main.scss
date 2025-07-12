@@ -1,0 +1,49 @@
+.v-input--flat .v-field__outline {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.v-input--flat .v-field__control {
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.v-input--flat.v-input--focused .v-field__control {
+  background-color: #f5f8fa;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.v-input--flat .v-field__control,
+.v-input--flat .v-field__append-inner {
+  padding: 12px;
+}
+
+.v-input--flat.v-input--focused .v-field__outline {
+  border-bottom: 2px solid #1976D2 !important;
+}
+.select-container {
+  contain: layout inline-size;
+}
+.create-drawer { 
+  padding-top: 0; 
+}
+.menu__btn { 
+  min-width: 0; 
+  padding: 0; 
+  width: 35px; 
+  height: 35px; 
+  font-size: 18px; 
+}
+.create-drawer & {
+  padding: 16px 24px;
+}
+.filter-form {
+  margin: 0;
+}
+.menu__btn {
+  min-width: 0;
+  padding: 0;
+  width: 35px;
+  height: 35px;
+  font-size: 18px;
+}
