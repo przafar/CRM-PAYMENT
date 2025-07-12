@@ -1,15 +1,6 @@
 {
   "employees": [
     {
-      "firstName": "Руслан",
-      "lastName": "Шомуродов",
-      "birthDate": "1985-06-15",
-      "passport": "AB1234567",
-      "gender": "Мужской",
-      "active": true,
-      "id": "1"
-    },
-    {
       "firstName": "Сабина",
       "lastName": "Орипова",
       "birthDate": "1990-11-30",
@@ -65,7 +56,7 @@
       "description": "test 222",
       "invoiceType": "Стандартная",
       "trusteeFullName": "Собирова Лола Алишер кизи",
-      "employeeId": "1"
+      "employeeId": null
     },
     {
       "id": "4c4c",
