@@ -7,6 +7,7 @@
         <slot name="controls" />
         <v-btn
           icon
+          v-if="hasFilterSlots"
           @click="$emit('toggle-filters')"
           :class="{ 'active--filters': filtersVisible }"
         >
@@ -24,7 +25,7 @@
 </template>
 
 <script setup lang="ts">
-import { defineProps, defineEmits } from 'vue'
+import { defineProps, defineEmits, useSlots } from 'vue'
 
 const props = defineProps<{
   title: string
@@ -34,6 +35,10 @@ const props = defineProps<{
 const emit = defineEmits<{
   (e: 'toggle-filters'): void
 }>()
+
+const slots = useSlots()
+const hasFilterSlots = !!slots.filters
+
 </script>
 
 <style scoped>

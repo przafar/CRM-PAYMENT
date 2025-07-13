@@ -101,6 +101,13 @@
         @saved="reload"
       />
     </v-navigation-drawer>
+    <VDialog v-model="showView" max-width="600">
+      <ShowDialog 
+        :document="viewingDocument"
+        @close="showView = false"
+      />
+    </VDialog>
+    
   </div>
 </template>
 
@@ -115,6 +122,7 @@ import PageHeader from '@/components/PageHeader.vue'
 import FilterForm from './components/FilterForm.vue'
 import CreateDocumentForm from './ui/CreateForm.vue'
 import UpdateDocumentForm from './ui/UpdateForm.vue'
+import ShowDialog from './components/ShowDialog.vue'
 
 type Document = { id: number; number: string; date: string; description: string }
 type Employee = { id: number; firstName: string; lastName: string }
@@ -134,12 +142,13 @@ const options = ref(
   }
 )
 
+const showView = ref(false)
+const viewingDocument = ref<Document | null>(null)
 const documentTypes = ['счет-фактура', 'доверенность']
 const showFilters = ref(false)
 const filterNumber = ref('')
 const selectedEmployeeId = ref<number|null>(null)
 const filterDocType = ref<string|null>(null)
-const filterDate = ref('')
 
 const employeeOptions = computed(() =>
   empStore.list.map((e: Employee) => ({ id: e.id, fullName: `${e.firstName} ${e.lastName}` }))
@@ -190,7 +199,6 @@ function reload() {
   docStore.loadList()
 }
 
-function onView(item: Document) {}
 function onEdit(item: Document) {
   editingId.value = item.id
   showEdit.value = true
@@ -200,6 +208,12 @@ async function onDelete(item: Document) {
   if (confirm(`Удалить документ №${item.number}?`)) {
     await docStore.removeDocument(item.id)
   }
+}
+
+function onView(item: Document) {
+  console.log('Viewing document:', item)
+  viewingDocument.value = item
+  showView.value = true
 }
 
 </script>

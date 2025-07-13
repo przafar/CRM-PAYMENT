@@ -47,3 +47,21 @@
   height: 35px;
   font-size: 18px;
 }
+.field-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.field-label {
+  font-weight: 500;
+  color: var(--v-theme-on-surface-variant);
+}
+
+.field-value {
+  margin-top: 4px;
+}
+
+.description-text {
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
