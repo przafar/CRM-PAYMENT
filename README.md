@@ -40,12 +40,15 @@ How to start your project
 npm install
 ```
 <h3>JSON-server Backend</h3>
-	1.	(Optional) Install json-server globally if you haven’t already:
+
+1.	(Optional) Install json-server globally if you haven’t already:
+
 ```bash
 npm install -g json-server
 ```
 
-	2.	Start json-server:
+2.	Start json-server:
+
 ```bash
 json-server --watch db.json --port 3000
 ```
@@ -64,10 +67,12 @@ json-server --watch db.json --port 3000
 
 
 ## Frontend (Vue)
-	1.	Start the dev server:
+
+1.	Start the dev server:
+
 ```bash
 npm ren serve
 ```
 
-	2.	Open http://localhost:8080 in your browser
+2.	Open http://localhost:8080 in your browser
 
