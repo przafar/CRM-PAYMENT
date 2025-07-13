@@ -10,7 +10,7 @@
 
 <p align="center">
     <img src="https://firebasestorage.googleapis.com/v0/b/greencard-fc6ee.appspot.com/o/Screenshot%202025-07-13%20at%2012.16.52.png?alt=media&token=00f1f314-03a8-4f18-9148-2df99ba811af" alt="Image Example" width="400px">
-    <img src="https://firebasestorage.googleapis.com/v0/b/greencard-fc6ee.appspot.com/o/Screenshot%202025-07-13%20at%2012.16.28.png?alt=media&token=176aa6a1-82d8-4230-8d91-9c6e1691458d" alt="Image Example" width="400px">
+    <img src="https://firebasestorage.googleapis.com/v0/b/greencard-fc6ee.appspot.com/o/Screenshot%202025-07-13%20at%2012.51.40.png?alt=media&token=ad4fe947-2be7-409a-91dd-8fa0b40777ba" alt="Image Example" width="400px">
 </p>
 
 <h2 id="technologies">💻 Technologies</h2>
@@ -49,7 +49,8 @@ npm install -g json-server
 ```bash
 json-server --watch db.json --port 3000
 ```
-•	Runs at http://localhost:3000
+
+	•	Runs at http://localhost:3000
 	•	Endpoints:
 	•	GET    /employees
 	•	GET    /documents
